@@ -117,7 +117,7 @@ h3{
 }
 
 h5{
-  font-size:.5556em;
+  font-size:.68em;
   text-transform:uppercase;
 }
 
@@ -153,6 +153,8 @@ header{
 nav{
   width:100%;
   margin:0;
+  display:flex;
+  align-items:center;
 }
 
 nav ul{
@@ -160,6 +162,7 @@ nav ul{
   background-color:#dddddd;
   padding:0;
   margin:0;
+  width:100%;
 }
 
 nav li{
@@ -177,8 +180,12 @@ nav ul li a{
   text-decoration:none;
   font-family:"Source Sans Pro", sans-serif;
   font-weight:bold;
+  font-size:1.2em;
 }
 
+.nav-reviews a{
+    color:#ff1256;
+}
 .about-us a{
   color:#ff1256;
 }
@@ -186,26 +193,17 @@ nav ul li a{
 
 /***********ASIDE **************/
 
-.newsletter-h2{
+.newsletter{
   width:100%;
   display:block;
 }
 
-.newsletter-signup input, button{
-  width:100%;
-}
-
-.newsletter-signup input{
-  border:1px solid #cccccc;
-  width:100%;
-  height:45px;
-}
-.newsletter-h2 h2{
+.newsletter h2{
   text-align:left;
 }
 
-.upcoming-concerts, .faq{
-  display:none;
+.newsletter-signup input, button{
+  width:100%;
 }
 
 .newsletter-signup{
@@ -216,7 +214,19 @@ nav ul li a{
   height:200px;
 }
 
-/*****BUTTONS**********/
+.newsletter-signup input{
+  border:1px solid #cccccc;
+  width:100%;
+  height:45px;
+}
+
+.upcoming-concerts, .faq{
+  display:none;
+}
+
+
+
+/************BUTTONS**********/
 .signup-btn{
   width:100%;
   background-color:#ff1256;
@@ -230,7 +240,19 @@ nav ul li a{
   border: 0;
 }
 
+.buy-btn{
+  width:100%;
+  background-color:#b21e49;
+  color:white;
+  text-transform:uppercase;
+  height:40px;
+  margin-top:5%;
+  box-shadow: 5px 5px 5px #d19aaa;
+  font-size:1em;
+  font-weight:bold;
+  border: 0;
 
+}
 /*********MAIN AREA ***********/
 
 .main-article-img, .main-article-img img{
@@ -248,7 +270,18 @@ nav ul li a{
   padding-top:1%;
 }
 
-/******NEWS AND REVIEWS**************/
+/****************NEWS AND REVIEWS PAGE**************************/
+
+
+/********HEADER********/
+
+
+.reviews-link a{
+  color:#ff1256;
+}
+
+/*****MAIN INFO SECTION ******/
+
 .news-reviews{
   width:90%;
   margin:5% 5% 0 5%;
@@ -291,19 +324,115 @@ nav ul li a{
   border-bottom:#cccccc 1px solid;
 }
 
+
 /********FOOTER ************/
 
 footer{
   background-color:#eeeeee;
   height:70px;
-  display:inline-block;
+  margin-top:10%;
   width:100%;
 }
 
-footer img{
-  width:50%;
-  margin:0 25%;
+.footer-img{
+  width:60%;
+  margin:0 20%;
 }
+
+.footer-img img{
+  width:100%;
+}
+
+
+/***************************NEWS PAGES************************************/
+
+section.news-content{
+  margin-left:3%;
+}
+
+.news-main{
+  border-bottom:0;
+}
+
+.news-article{
+  border-right:1px solid #cccccc;
+  padding-right:5%;
+}
+
+.news-aside{
+  padding:0;
+  border:0;
+
+}
+
+
+
+/**************ABOUT US PAGE *******************/
+
+/***NAVIGATION***/
+
+.about-us a{
+    color:#ff1256;
+  }
+
+/****CONTACT US******/
+.conctact-us a{
+  color:black;
+}
+
+section.contact-us {
+    text-align:center;
+}
+
+
+/***TEAM MEMBERS ****/
+
+.team-member{
+  text-align:center;
+}
+
+.mission, .team {
+    width: 94%;
+    margin: 0 auto;
+}
+
+
+/************FREQUENTLY ASKED QUESTIONS **********/
+
+.faq-main{
+  width:60%;
+  float:left;
+  margin-left:4%;
+}
+
+.faq-main h1{
+  margin-left:5%;
+}
+
+/************UPCOMING CONCERTS ********/
+.feed-date{
+  border: 1px solid gray;
+  float: left;
+  margin-right: 5%;
+  width: 25%;
+  text-align: center;
+}
+
+.feed-item{
+  clear:both;
+  margin:15% 10%;
+  font-size:.75em;
+}
+
+.feed-item h3, h4{
+  margin:0;
+  padding:0;
+}
+
+.feed-item h4{
+  font-weight:lighter;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -385,7 +514,7 @@ footer img{
    Modify as content requires.
    ========================================================================== */
 /********TABLET STYLES***********/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 748px) {
 
 html{
   font-size:18px;
@@ -409,16 +538,24 @@ h3{
 nav{
   width:62%;
   float:left;
+  margin:2% 0;
 }
 
 nav ul{
-  padding:5.5%;
+  width:100%;
+  height:3em;
+  line-height:3em;
 }
 
 nav li{
   display:inline;
-  margin-left:2.5%;
+  margin-left:3.5%;
   border:0;
+}
+
+nav ul li a{
+  font-size:1em;
+  margin-right:1%;
 }
 
 /******************MAIN AREA ******************/
@@ -540,27 +677,55 @@ footer{
   justify-content:center;
 }
 
+.footer-img{
+  width: 40%;
+  margin: 0 30%;
 }
 
 
-/********DESKTOP STYLES***********/
+/************************ABOUT US PAGE *******************/
+section.contact-us{
+  width:40%;
+  float:left;
+}
+
+.team-member-img{
+  float:left;
+}
+
+.team-member {
+  clear:both;
+  margin-top:10%;
+}
+
+iframe{
+  width:55%;
+  margin-right:5%;
+}
+
+
+
+}
+
+
+/*********************LAPTOP STYLES***************************/
 @media only screen and (min-width: 900px) {
 
 /******BASE STYLES**********/
 html{
-  font-size:18px;
+  font-size:1.2em;
 }
 
-body{
-  max-width:1200px;
-  margin:0 auto;
-}
 h2{
-  font-size:1.67em;
+  font-size:1.17em;
 }
 
 h3{
-  font-size:1.167em;
+  font-size:1.1em;
+}
+
+h5{
+
 }
 
 p{
@@ -575,7 +740,8 @@ header{
 }
 
 .logo{
-  margin:1% 3%;
+  margin:1% 0 1% 3%;
+  width:36%;
 }
 
 .logo img{
@@ -583,10 +749,8 @@ header{
 }
 
 nav{
-  width:56%;
-  height:100%;
-  display:flex;
-  justify-content:flex-end;
+  width:61%;
+  margin:0;
 }
 
 nav li{
@@ -594,7 +758,8 @@ nav li{
 }
 
 nav ul{
-  padding:2%;
+  width:100%;
+  text-align:right;
 }
 
 
@@ -602,6 +767,8 @@ nav ul{
 main{
   padding-top:5%;
 }
+
+
 figure.main-article-img{
     float:none;
     width:100%;
@@ -617,12 +784,14 @@ figure.main-article-img{
   margin-left:3%;
 }
 
+
 /*********CALL TO ACTION SIDEBAR ****************/
 
 aside{
   width:30%;
   border-left:1px solid #cccccc;
   padding:0 2%;
+  height:690px;
 }
 
 aside h2{
@@ -650,6 +819,7 @@ aside h2{
   width:95%;
   margin:0 2.5%;
   border-right:0;
+  color:black;
 }
 
 .news-reviews article{
@@ -674,16 +844,122 @@ aside h2{
 
 /*************REVIEWS LANDING PAGE*************/
 .main-review-article img{
-  margin:2.5%, 2.5%, 0, 2.5%;
+  margin:2.5% 2.5% 0 2.5%;
 }
 
 .main-review-article h1{
   padding:0;
 }
+
+
+/************UPCOMING CONCERTS**************/
+
+.feed{
+  width:60%;
+  float:left;
+  margin-left:5%;
+}
+
+.feed-left{
+  width:45%;
+  float:left;
+}
+
+
+.feed-left, .feed-right{
+  width:50%;
+  float:left;
+}
+
+
+
+
+
+
+
+
 /***********FOOTER ***************/
+
+footer img{
+  width:50%;
+}
+
+}
+
+
+/*********************DESKTOP STYLES***************************/
+@media all and (min-width: 1250px) {
+
+html{
+  font-size:1.5em;
+}
+
+h2{
+  color:#000;
+}
+
+h5{
+  font-size:.8em;
+}
+
+
+/****NAVIGATION *****/
+
+main{
+  border-bottom:0;
+}
+
+
+figure.main-article-img img {
+  width:85%;
+  margin:0 7.5%;
+}
+
+/* NEWS AND REVIEWS SECTION - LANDING PAGE ****/
+
+.news-reviews p{
+  font-size:.75em;
+  padding-bottom:10%;
+}
+
+.news-reviews figure{
+  margin:1% 3% 15% 0;
+}
+
+/****FOOTER *****/
+
+.footer-img{
+  width:25%;
+}
+
+/*****************ABOUT US ********************/
+.mission{
+  margin:5% auto;
+}
+
 
 
 }
+
+
+@media all and (min-width: 1500px) {
+
+
+/****About us page *****/
+  .team-member{
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .team h1{
+    text-align:center;
+  }
+
+
+}
+
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
