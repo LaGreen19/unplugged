@@ -1,2 +1,2 @@
 # unplugged
-PSD to HTML5/CSS3
+PSD to Responsive HTML5/CSS3
