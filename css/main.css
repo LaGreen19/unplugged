@@ -391,17 +391,6 @@ section.contact-us {
 }
 
 
-/******************** FREQUENTLY ASKED QUESTIONS ********************/
-.faq-main{
-  width:60%;
-  float:left;
-  margin-left:4%;
-}
-
-.faq-main h1{
-  margin-left:5%;
-}
-
 /********** UPCOMING CONCERTS **********/
 
 .concerts-link a{
@@ -434,6 +423,14 @@ section.contact-us {
 .feed-item h4{
   font-weight:lighter;
 }
+
+/********** FAQ **********/
+.faq-main{
+  width:90%;
+  margin:0 auto;
+}
+
+
 
 
 /* ==========================================================================
@@ -575,7 +572,6 @@ header{
 
 nav{
   float:left;
-  margin: 0 0 0 10%;
 }
 
 nav ul{
@@ -583,7 +579,6 @@ nav ul{
   height:3em;
   line-height:3em;
   text-align:right;
-  margin-right:11%;
 }
 
 nav li{
@@ -629,7 +624,7 @@ figure.main-article-img img{
 aside{
   width:35%;
   float:right;
-  margin-right:2%;
+  margin: 2% 2% 0 0;
 }
 
 aside h2{
@@ -772,6 +767,13 @@ iframe{
   text-decoration:none!important;
 }
 
+/******************** FREQUENTLY ASKED QUESTIONS ********************/
+.faq-main{
+  width:60%;
+  float:left;
+  margin: 2% 0 0 2%;
+}
+
 }
 
 /********************** LAPTOP STYLES***************************/
@@ -853,7 +855,11 @@ aside{
   width:30%;
   border-left:1px solid #cccccc;
   padding:0 2%;
-  height:690px;
+  height:575px;
+}
+
+.news-aside{
+  margin-top:5%;
 }
 
 aside h2{
@@ -886,7 +892,7 @@ aside h2{
 .news-reviews{
   clear:both;
   width:95%;
-  margin:0 2.5%;
+  margin:2.5%;
   border-right:0;
 }
 
@@ -933,6 +939,11 @@ aside h2{
 
 .faq.concerts-faq {
     padding: 5% 0 0 2%;
+}
+
+/*********** FAQ ***********/
+.faq-main{
+  margin:0 0 0 2%;
 }
 
 /*********** FOOTER  ***********/
@@ -1033,6 +1044,14 @@ nav{
 
 news-aside .newsletter-signup {
     max-width: 1075px;
+}
+
+.news-aside{
+  margin-top:1%;
+}
+
+.faq-main{
+  padding-top:1%;
 }
 
 /*********** FOOTER ***********/
