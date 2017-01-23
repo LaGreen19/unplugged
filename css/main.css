@@ -180,7 +180,7 @@ nav ul li a{
 }
 
 .nav-reviews a,
-.about-us a {
+.current-page a {
     color:#ff1256;
 }
 
@@ -363,12 +363,6 @@ section.news-content{
 
 /******************** ABOUT US PAGE ********************/
 
-/********** NAVIGATION **********/
-
-.about-us a{
-    color:#ff1256;
-  }
-
 /********** MAP ******/
 iframe {
     width: 90%;
@@ -409,6 +403,11 @@ section.contact-us {
 }
 
 /********** UPCOMING CONCERTS **********/
+
+.concerts-link a{
+  color:#ff1256;
+}
+
 .upcoming-concerts-h1{
   text-align:center;
   padding-top:10%;
