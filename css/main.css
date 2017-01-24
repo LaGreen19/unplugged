@@ -1025,6 +1025,13 @@ nav{
   right: 0;
 }
 
+/*********** SIDEBAR ***********/
+
+aside {
+    padding: 0 1.5%;
+    height: 700px;
+}
+
 /***********  ABOUT US PAGE ***********/
 .team-member{
   max-width:1200px;
